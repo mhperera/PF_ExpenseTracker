@@ -18,9 +18,14 @@ code {
 
 @layer components {
 
+  /* UI Components */
+  .Card{
+    @apply shadow-md rounded-md;
+  }
+
   /* ExpenseItems Component */
   .ExpenseItems{
-    @apply flex items-center p-2 mx-0 my-4 rounded bg-slate-100 shadow-md;
+    @apply flex items-center p-2 mx-0 my-4  bg-slate-100 ;
   }
   .ExpenseItems__description{
     @apply flex flex-col items-end justify-between grow px-4 md:gap-4 md:flex-row md:items-center md:justify-between md:flex-1;
@@ -48,6 +53,6 @@ code {
 
   /* Expenses Component */
   .Expenses{
-    @apply py-4 px-8 my-8 mx-auto w-11/12 bg-slate-300 rounded shadow-md;
+    @apply py-4 px-8 my-8 mx-auto w-11/12 bg-slate-300 ;
   }
 }

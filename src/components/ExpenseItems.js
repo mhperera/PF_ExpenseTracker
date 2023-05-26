@@ -1,9 +1,10 @@
 import React from 'react';
 import ExpenseDate from './ExpenseDate';
+import Card from './UI/Card';
 
 const ExpenseItems = (props) => {
 	return (
-		<div className="ExpenseItems">
+		<Card className="ExpenseItems">
       <ExpenseDate
         date={props.date}
       />
@@ -11,7 +12,7 @@ const ExpenseItems = (props) => {
         <h2 className='ExpenseItems__title'>{ props.title }</h2>
         <div className='ExpenseItems__price'>LKR : { props.amount }</div>
       </div>
-		</div>
+		</Card>
 	);
 };
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import ExpenseItems from './ExpenseItems';
+import Card from './UI/Card';
 
 const Expenses = (props) => {
   return (
-    <div className="Expenses">
+    <Card className="Expenses">
         { props.items.map((expense)=>(
             <ExpenseItems
                 key={expense.id}
@@ -12,7 +13,7 @@ const Expenses = (props) => {
                 date={expense.date}
             />
         )) }
-    </div>
+    </Card>
   )
 }
 
