@@ -1,4 +1,3 @@
-import React from 'react'
 import ExpenseItems from './ExpenseItems';
 import Card from './UI/Card';
 
