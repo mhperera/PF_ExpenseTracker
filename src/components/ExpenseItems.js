@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import ExpenseDate from './ExpenseDate';
 
-const ExpenseItems = () => {
-  return (
-    <div class="ExpenseItems">
-        <h1 className=''>Expense Items</h1>
-    </div>
-  )
-}
+const ExpenseItems = (props) => {
+	return (
+		<div className="ExpenseItems">
+      <ExpenseDate
+        date={props.date}
+      />
+			<div className='ExpenseItems__description'>
+        <h2 className='ExpenseItems__title'>{ props.title }</h2>
+        <div className='ExpenseItems__price'>LKR : { props.amount }</div>
+      </div>
+		</div>
+	);
+};
 
-export default ExpenseItems
+export default ExpenseItems;

@@ -15,3 +15,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components {
+
+  /* ExpenseItems Component */
+  .ExpenseItems{
+    @apply flex items-center p-2 mx-0 my-4 rounded bg-slate-100 shadow-md;
+  }
+  .ExpenseItems__description{
+    @apply flex flex-col items-end justify-between grow px-4 md:gap-4 md:flex-row md:items-center md:justify-between md:flex-1;
+  }
+  .ExpenseItems__title{
+    @apply text-zinc-900 text-base my-2 md:my-4;
+  }
+  .ExpenseItems__price{
+    @apply w-36 px-4 py-2 text-base font-bold text-white bg-red-500 border-2 border-solid border-red-600 rounded;
+  }
+
+  /* ExpenseDate Component */
+  .ExpenseDate{
+    @apply p-4 flex flex-col w-24 h-24 bg-slate-700 text-white items-center justify-center border-2 border-solid border-white rounded-lg;
+  }
+  .ExpenseDate__month{
+    @apply text-sm font-bold;
+  }
+  .ExpenseDate__day{
+    @apply text-2xl font-bold;
+  }
+  .ExpenseDate__year{
+    @apply text-sm;
+  }
+
+  /* Expenses Component */
+  .Expenses{
+    @apply py-4 px-8 my-8 mx-auto w-11/12 bg-slate-300 rounded shadow-md;
+  }
+}
