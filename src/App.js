@@ -1,5 +1,6 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/Expenses/NewExpense/NewExpense';
 
 const App = () => {
 
@@ -36,8 +37,17 @@ const App = () => {
     },
   ];
 
+  const handleAddExpense = (enteredExpenseData) => {
+    const expenseData = {
+      ...enteredExpenseData,
+      id : Math.random().toString()
+    }
+    console.log(expenseData);
+  }
+
   return (
     <div className="App">
+      <NewExpense onSaveExpenseData={handleAddExpense}/>
       <Expenses
         items={expenseList}
       />
