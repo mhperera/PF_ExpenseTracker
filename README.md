@@ -1,4 +1,4 @@
-![Expense Tracker Screen Shot](./Capture.jpg)
+![Expense Tracker Screen Shot](./capture.png)
 
 # Getting Started with Create React App
 
