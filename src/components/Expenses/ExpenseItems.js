@@ -19,7 +19,7 @@ const ExpenseItems = (props) => {
 						LKR : {props.amount}
 					</div>
 				</div>
-				<button onClick={handleClick}>Change Title</button>
+				{/* <button onClick={handleClick}>Change Title</button> */}
 			</Card>
 		</li>
 	);
